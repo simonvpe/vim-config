@@ -27,6 +27,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set cursorline
-
+set list
+set listchars=tab:>-
 let g:ale_c_parse_compile_commands = 1
 
