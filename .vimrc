@@ -14,6 +14,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'jacoborus/tender.vim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
+  Plug 'mhinz/vim-signify'
   Plug 'rhysd/vim-clang-format'
   Plug 'scrooloose/nerdcommenter'
   Plug 'tpope/vim-fugitive'
