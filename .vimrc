@@ -22,6 +22,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
+  Plug 'Yggdroot/indentLine'
+  Plug 'kien/rainbow_parentheses.vim'
 call plug#end()
 
 colors tender
@@ -46,3 +48,9 @@ let g:ale_c_build_dir_names = ['build', 'build-x86/Debug', 'build-x86/Release', 
 " Repgrip and Fzf
 nnoremap <C-p> :Files<Cr>
 nnoremap <C-y> :Rg<Cr>
+
+" Rainbow parentheses
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
