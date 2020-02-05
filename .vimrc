@@ -25,6 +25,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'Yggdroot/indentLine'
   Plug 'kien/rainbow_parentheses.vim'
   Plug 'jpo/vim-railscasts-theme'
+  Plug 'twinside/vim-hoogle'
 call plug#end()
 
 colors railscasts
