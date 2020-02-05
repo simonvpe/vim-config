@@ -35,6 +35,7 @@ set cursorline
 set list
 set listchars=tab:>-
 
+" ALE
 let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace'], 'cpp': ['clang-format', 'clangtidy']}
 let g:ale_linters = {'cpp': ['clangd', 'clangtidy', 'cppcheck']}
 let g:ale_c_parse_compile_commands = 1
@@ -42,5 +43,6 @@ let g:ale_c_gcc_options = ""
 let g:ale_cpp_clang_options = ""
 let g:ale_c_build_dir_names = ['build', 'build-x86/Debug', 'build-x86/Release', 'build-x86/LLVMDebug', 'build-x86/LLVMRelease']
 
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+" Repgrip and Fzf
+nnoremap <C-p> :Files<Cr>
+nnoremap <C-y> :Rg<Cr>
