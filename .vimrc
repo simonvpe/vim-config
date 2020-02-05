@@ -21,12 +21,13 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-sensible'
   Plug 'tpope/vim-surround'
   Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
+"  Plug 'vim-airline/vim-airline-themes'
   Plug 'Yggdroot/indentLine'
   Plug 'kien/rainbow_parentheses.vim'
+  Plug 'jpo/vim-railscasts-theme'
 call plug#end()
 
-colors tender
+colors railscasts
 syntax on
 set number relativenumber
 set ff=unix
