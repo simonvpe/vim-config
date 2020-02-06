@@ -16,16 +16,16 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf.vim'
   Plug 'mhinz/vim-signify'
   Plug 'rhysd/vim-clang-format'
-  Plug 'scrooloose/nerdcommenter'
+  Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-sensible'
   Plug 'tpope/vim-surround'
   Plug 'vim-airline/vim-airline'
-"  Plug 'vim-airline/vim-airline-themes'
   Plug 'Yggdroot/indentLine'
   Plug 'kien/rainbow_parentheses.vim'
   Plug 'jpo/vim-railscasts-theme'
   Plug 'twinside/vim-hoogle'
+  Plug 'ntpeters/vim-better-whitespace'
 call plug#end()
 
 colors railscasts
@@ -38,6 +38,8 @@ set expandtab
 set cursorline
 set list
 set listchars=tab:>-
+set noswapfile
+set nobackup
 
 " ALE
 let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace'], 'cpp': ['clang-format', 'clangtidy']}
@@ -56,3 +58,7 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" Whitespace
+let g:strip_whitespace_on_save = 1
+let g:strip_whitespace_confirm = 0
