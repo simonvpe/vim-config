@@ -9,23 +9,24 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
+  Plug 'Yggdroot/indentLine'
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'dense-analysis/ale'
   Plug 'jacoborus/tender.vim'
+  Plug 'jpo/vim-railscasts-theme'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
+  Plug 'kien/rainbow_parentheses.vim'
   Plug 'mhinz/vim-signify'
+  Plug 'ntpeters/vim-better-whitespace'
   Plug 'rhysd/vim-clang-format'
   Plug 'tpope/vim-commentary'
+  Plug 'tpope/vim-eunuch'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-sensible'
   Plug 'tpope/vim-surround'
-  Plug 'vim-airline/vim-airline'
-  Plug 'Yggdroot/indentLine'
-  Plug 'kien/rainbow_parentheses.vim'
-  Plug 'jpo/vim-railscasts-theme'
   Plug 'twinside/vim-hoogle'
-  Plug 'ntpeters/vim-better-whitespace'
+  Plug 'vim-airline/vim-airline'
 call plug#end()
 
 colors railscasts
