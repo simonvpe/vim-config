@@ -10,7 +10,6 @@ endif
 
 call plug#begin('~/.vim/plugged')
   Plug 'Yggdroot/indentLine'
-  Plug 'ctrlpvim/ctrlp.vim'
   Plug 'dense-analysis/ale'
   Plug 'jacoborus/tender.vim'
   Plug 'jpo/vim-railscasts-theme'
@@ -51,8 +50,11 @@ let g:ale_cpp_clang_options = ""
 let g:ale_c_build_dir_names = ['build', 'build-x86/Debug', 'build-x86/Release', 'build-x86/LLVMDebug', 'build-x86/LLVMRelease']
 
 " Repgrip and Fzf
-nnoremap <C-p> :Files<Cr>
-nnoremap <C-y> :Rg<Cr>
+nnoremap <C-b> :Buffers<Cr>
+nnoremap <C-t> :Files<Cr>
+nnoremap <C-h> :Rg<Cr>
+nnoremap <C-l> :BLines<Cr>
+nnoremap <C-L> :Lines<Cr>
 
 " Rainbow parentheses
 au VimEnter * RainbowParenthesesToggle
